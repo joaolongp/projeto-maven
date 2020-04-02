@@ -9,6 +9,8 @@ public class App {
       PersistenciaVeiculos pv = new PersistenciaVeiculos();
       List<Veiculo> veiculos = pv.carregaVeiculos();
 
+      System.out.println("Pull Request");
+       
       if (pv.persisteVeiculos(veiculos)) {
         System.out.println("Veiculos salvos com sucesso.");
       }
